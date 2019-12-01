@@ -1,4 +1,24 @@
-let money, time;
+let money, time,
+    startButtonNode = document.querySelector('#start'),
+    budgetNode = document.querySelector('.budget-value'),
+    dayBudgetNode = document.querySelector('.daybudget-value'),
+    expensesNode = document.querySelector('.expenses-value'),
+    optExpensesNode = document.querySelector('.optionalexpenses-value'),
+    incomeNode = document.querySelector('.income-value'),
+    monthSavingsNode = document.querySelector('.monthsavings-value'),
+    yearSavingsNode = document.querySelector('.yearsavings-value'),
+    yearNode = document.querySelector('.year-value'),
+    monthNode = document.querySelector('.month-value'),
+    dayNode = document.querySelector('.day-value'),
+    expensesItemsNode = document.querySelectorAll('.expenses-item'),
+    acceptButtonExpensesNode = document.getElementsByTagName('button')[0],
+    acceptButtonOptExpensesNode = document.getElementsByTagName('button')[1],
+    countBudgetButtonNode = document.getElementsByTagName('button')[2],
+    optExpensesItemsNode = document.querySelectorAll('.optionalexpenses-item'),
+    chooseIncomeNode = document.querySelector('#income'),
+    checkSavingsNode = document.querySelector('#savings'),
+    chooseSumSavingsNode = document.querySelector('#sum'),
+    choosePercentSavingsNode = document.querySelector('#percentS');
 
 function start() {
     money = +prompt("Введите ваш бюджет: ", '');
